@@ -1,0 +1,47 @@
+/*
+ * Pain Tracker design tokens.
+ * Source: original PainTrack / Bay State Pain prototype screens (see the PainTrack case study on hebamoussa.com)
+ * and the PainTrack case study. Sampled values are noted; contrast fixes keep the same hue family.
+ */
+:root {
+  /* Brand */
+  --navy: 15 69 106;          /* #0F456A — title bars, headings (sampled from Log Pain / Reminders header) */
+  --navy-deep: 11 50 78;      /* #0B324E — pressed state */
+  --primary: 20 98 151;       /* #146297 — primary buttons, active chips, toggles (sampled "Finish Setup") */
+  --primary-hover: 15 69 106; /* prototype hover state = navy */
+  --primary-soft: 220 233 244;/* #DCE9F4 — selected backgrounds (case study --signal-soft) */
+  --accent: 59 127 170;       /* #3B7FAA — goal-tile icons (sampled) */
+  --accent-soft: 228 249 249; /* #E4F9F9 — icon tiles (sampled welcome goals) */
+  --accent-wash: 242 252 252; /* #F2FCFC — body-map panel, selected card wash (sampled) */
+
+  /* Semantic (design-system palette; *-ink variants darkened for 4.5:1 text contrast) */
+  --success: 127 200 169;     /* #7FC8A9 — design system "Success" (fills/dots only) */
+  --success-ink: 22 109 76;   /* #166D4C — success text on white, 6.3:1 */
+  --success-soft: 229 245 238;
+  --warning: 245 166 35;
+  --warning-ink: 146 84 0;    /* #925400 — 5.6:1 */
+  --warning-soft: 254 243 222;
+  --danger: 239 68 68;        /* #EF4444 — design system "Error" */
+  --danger-ink: 185 28 28;    /* #B91C1C — Discard text, 6.5:1 */
+  --danger-soft: 254 242 242; /* #FEF2F2 — Discard background (sampled) */
+
+  /* Neutrals */
+  --ink: 16 38 59;            /* #10263B — body text (case study --ink) */
+  --ink-muted: 75 90 107;     /* #4B5A6B — secondary text, 7:1 (prototype grey lightened text failed AA) */
+  --ink-subtle: 107 120 134;  /* #6B7886 — captions/placeholders, 4.6:1 */
+  --surface: 247 249 250;     /* #F7F9FA — app background, preference rows (sampled) */
+  --surface-raised: 255 255 255;
+  --surface-sunken: 238 242 245;
+  --line: 224 231 235;        /* #E0E7EB — design system "Neutral" card borders */
+  --line-strong: 194 206 218; /* #C2CEDA — input borders (3:1 non-text contrast) */
+
+  /* Pain scale — green → yellow → red, as in the prototype intensity bar */
+  --pain-0: #9ED8B5; --pain-1: #D4EFA0; --pain-2: #BCE38A; --pain-3: #9DBA6A; --pain-4: #FFD43B;
+  --pain-5: #FDB13B; --pain-6: #FA9F3A; --pain-7: #F68B2C; --pain-8: #EE6A2F; --pain-9: #E8522B; --pain-10: #E02424;
+
+  /* Geometry — spacing scale 4/8/16/24/32/48, radii 4/8/12/16 */
+  --nav-h: 64px;
+  --header-h: 60px;
+  --touch: 44px;
+  color-scheme: light;
+}
